@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Articles</title>
+    </head>
+    <body>
+        <h1>Articles</h1>
+        <a href = "/add-article">Add Article</a>
+        
+            {{#each results}}
+            <li>
+                <span>{{articleID}}</span><br>
+                <a href = "/articles/{{articleID}}">Veiw</a>
+                <a href = "/edit-articles/{{articleID}}">Edit</a>
+                <a href = "/delete articles/{{articleID}}">Delete</a>
+            </li>
+            {{/each}}
+        <a href="/">Homepage</a>
+    </body>
+</html>

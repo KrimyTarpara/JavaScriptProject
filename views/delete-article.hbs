@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>delete-article</title>
+    </head>
+    <body>
+        <h1>deleteArticles</h1>
+        <h1>Article # {{{articleNo}}}</h1>
+        <p>Name:{{{articleName}}}
+            <br>
+            Content:{{{articleContent}}}
+            <br>
+            Last Updated on: {{{articleDate}}}
+        </p>
+        <p>Are you sure that you want to delete this article ?</p>
+        <form action = "/article/delete" method = "POST">
+            <input type = "hidden" name = "articleID" value = "{{{articleNo}}}">
+            <input type = "submit" value = "AreYouSure!">
+        </form>
+        <form action = "/articles" method = "GET"><input type = "submit" value = "No">
+        <a href="/">Homepage</a>
+        </form>
+    </body>
+</html>

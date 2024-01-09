@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>edit-article</title>
+    </head>
+    <body>
+        <h1>editArticle</h1>
+        <form action = "/article/edit" method = "POST">
+            <label for="articleName">Name: </label>
+            <input type = "text" name = "articleName" value = "{{articleName}}"><br>
+            <label for="articleContent">Content: </label>
+            <input type = "text" name = "articleContent" value = "{{articleContent}}"><br>
+            <input type = "hidden" name = "articleID" value = "{{{articleNo}}}">
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/">Homepage</a>
+        <a href = "/articles">All Articles</a>
+    </body>
+</html>
